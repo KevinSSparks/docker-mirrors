@@ -1,5 +1,6 @@
-name = "cloudflare-docker-proxy"
-compatibility_date = "2023-12-01"
+name = "docker-flies"
+main = "src/index.js"                      # 添加入口脚本路径
+compatibility_date = "2025-09-06"          # 使用 ISO 格式日期
 
 [dev]
 ip = "0.0.0.0"
