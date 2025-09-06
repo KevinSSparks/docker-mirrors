@@ -1,6 +1,6 @@
 name = "dockerfiles"
-main = "src/index.js"                      # 添加入口脚本路径
-compatibility_date = "2025-09-06"          # 使用 ISO 格式日期
+main = "src/index.js"
+compatibility_date = "2025-09-06"
 
 [dev]
 ip = "0.0.0.0"
@@ -10,7 +10,6 @@ local_protocol = "http"
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
-CUSTOM_DOMAIN = "exmaple.com"
 
 [env.production]
 name = "cloudflare-docker-proxy"
@@ -26,12 +25,11 @@ name = "cloudflare-docker-proxy"
 
 [env.production.vars]
 MODE = "production"
-TARGET_UPSTREAM = ""
+TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
-TARGET_UPSTREAM = ""
+TARGET_UPSTREAM = "https://registry-1.docker.io"
