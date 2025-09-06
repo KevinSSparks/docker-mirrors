@@ -1,4 +1,4 @@
-name = "docker-flies"
+name = "dockerfiles"
 main = "src/index.js"                      # 添加入口脚本路径
 compatibility_date = "2025-09-06"          # 使用 ISO 格式日期
 
@@ -8,7 +8,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "libcuda.so"
+CUSTOM_DOMAIN = "dockerfiles.noble.qzz.io"
 
 [env.dev.vars]
 MODE = "debug"
